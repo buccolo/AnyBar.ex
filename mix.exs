@@ -3,10 +3,10 @@ defmodule Anybar.Mixfile do
 
   def project do
     [app: :anybar,
+     description: "Elixir interface to AnyBar app",
+     package: package(),
      version: "0.1.0",
      elixir: "~> 1.4",
-     description: "Elixir interface for AnyBar app",
-     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      escript: escript(),
@@ -41,6 +41,6 @@ defmodule Anybar.Mixfile do
   defp package do
     [ licenses: ["MIT"],
       maintainers: ["Bruno Buccolo"],
-      links: ["https://github.com/buccolo/anybar.ex"] ]
+      links: %{"GitHub" => "https://github.com/buccolo/anybar.ex" } ]
   end
 end
