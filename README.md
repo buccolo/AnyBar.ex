@@ -1,11 +1,10 @@
-# Anybar
+# Anybar [![Build Status](https://circleci.com/gh/buccolo/AnyBar.ex.svg?style=shield)](https://circleci.com/gh/buccolo/AnyBar.ex) [![Hex pm](https://img.shields.io/hexpm/v/anybar.svg?style=flat)](https://hex.pm/packages/anybar)
 
-**TODO: Add description**
+Elixir interface to AnyBar app
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `anybar` to your list of dependencies in `mix.exs`:
+First, add Anybar to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
@@ -13,7 +12,17 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/anybar](https://hexdocs.pm/anybar).
+Then, update your dependencies:
+```sh-session
+$ mix deps.get
+```
 
+## Usage
+
+```elixir
+Anybar.change("orange")
+#=> :ok
+
+Anybar.change("red", 12345)
+#=> :ok
+```
