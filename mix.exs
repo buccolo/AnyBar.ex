@@ -1,4 +1,4 @@
-defmodule Anybar.Mixfile do
+defmodule AnyBar.Mixfile do
   use Mix.Project
 
   def project do
@@ -22,7 +22,7 @@ defmodule Anybar.Mixfile do
   end
 
   def escript do
-    [main_module: Anybar.CLI]
+    [main_module: AnyBar.CLI]
   end
 
   # Dependencies can be Hex packages:

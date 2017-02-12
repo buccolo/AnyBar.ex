@@ -1,10 +1,10 @@
-# Anybar [![Build Status](https://circleci.com/gh/buccolo/AnyBar.ex.svg?style=shield)](https://circleci.com/gh/buccolo/AnyBar.ex) [![Hex pm](https://img.shields.io/hexpm/v/anybar.svg?style=flat)](https://hex.pm/packages/anybar)
+# AnyBar [![Build Status](https://circleci.com/gh/buccolo/anybar.svg?style=shield)](https://circleci.com/gh/buccolo/anybar) [![Hex pm](https://img.shields.io/hexpm/v/anybar.svg?style=flat)](https://hex.pm/packages/anybar)
 
 Elixir interface to AnyBar app
 
 ## Installation
 
-First, add Anybar to your `mix.exs` dependencies:
+First, add AnyBar to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
@@ -20,9 +20,9 @@ $ mix deps.get
 ## Usage
 
 ```elixir
-Anybar.change("orange")
+AnyBar.change("orange")
 #=> :ok
 
-Anybar.change("red", 12345)
+AnyBar.change("red", 12345)
 #=> :ok
 ```

@@ -1,6 +1,6 @@
-defmodule AnybarTest do
+defmodule AnyBarTest do
   use ExUnit.Case, async: true
-  doctest Anybar
+  doctest AnyBar
 
   test "sends color through specified UDP port" do
     defmodule TestUDPClient do
@@ -13,7 +13,7 @@ defmodule AnybarTest do
       end
     end
 
-    Anybar.change('orange', 1234, TestUDPClient)
+    AnyBar.change('orange', 1234, TestUDPClient)
 
     assert_received {:send, 'orange', 1234}
   end

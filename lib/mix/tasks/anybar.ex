@@ -1,5 +1,5 @@
-defmodule Mix.Tasks.Anybar do
+defmodule Mix.Tasks.AnyBar do
   use Mix.Task
 
-  def run(args), do: Anybar.CLI.main(args)
+  def run(args), do: AnyBar.CLI.main(args)
 end
