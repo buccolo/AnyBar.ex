@@ -1,6 +1,6 @@
 defmodule Anybar do
-  def change(color, port) do
-    {:ok, socket } = :gen_udp.open(0, [:binary])
-    :gen_udp.send(socket, 'localhost', port, color)
+  def change(color, port, udp_client \\ :gen_udp) do
+    {:ok, socket } = udp_client.open(0, [:binary])
+    udp_client.send(socket, 'localhost', port, color)
   end
 end
