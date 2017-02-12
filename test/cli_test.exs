@@ -1,5 +1,5 @@
 defmodule Anybar.CLITest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest Anybar.CLI
 
   defmodule TestAnybar do

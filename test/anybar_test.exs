@@ -1,5 +1,5 @@
 defmodule AnybarTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest Anybar
 
   test "sends color through specified UDP port" do
