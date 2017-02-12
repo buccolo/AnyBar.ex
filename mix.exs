@@ -22,7 +22,7 @@ defmodule Anybar.Mixfile do
   end
 
   def escript do
-    [main_module: AnyBar.CLI]
+    [main_module: Anybar.CLI]
   end
 
   # Dependencies can be Hex packages:
