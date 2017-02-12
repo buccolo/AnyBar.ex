@@ -1,8 +1,20 @@
 defmodule AnyBar do
   @default_port 1738
 
+  @moduledoc """
+  Provides an Elixir interface for interacting with AnyBar
+
+  ## Examples
+
+      iex> AnyBar.change("blue")
+      :ok
+
+      iex> AnyBar.change("green", 12345)
+      :ok
+  """
+
   @doc """
-  Changes `color` of AnyBar running on given `port`
+  Changes `color` of AnyBar running on the given `port`
   """
   @spec change(String.t, Integer.t) :: :ok | { :error, String.t }
   def change(color, port \\ @default_port, udp_client \\ :gen_udp) do

@@ -8,7 +8,7 @@ First, add AnyBar to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:anybar, "~> 0.1.0"}]
+  [{:anybar, "~> 0.3.0"}]
 end
 ```
 
