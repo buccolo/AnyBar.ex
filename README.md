@@ -35,6 +35,6 @@ $ mix anybar orange
 
 Or by installing the escript:
 ```sh-session
-$ mix escript.install anybar
+$ mix escript.install hex anybar
 ./anybar blue
 ```
