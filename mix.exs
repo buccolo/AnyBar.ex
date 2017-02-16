@@ -40,8 +40,8 @@ defmodule AnyBar.Mixfile do
   end
 
   defp package do
-    [ licenses: ["MIT"],
-      maintainers: ["Bruno Buccolo"],
-      links: %{"GitHub" => "https://github.com/buccolo/anybar" } ]
+    [licenses: ["MIT"],
+     maintainers: ["Bruno Buccolo"],
+     links: %{"GitHub" => "https://github.com/buccolo/anybar"}]
   end
 end
